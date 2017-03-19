@@ -26,3 +26,5 @@ Stop elasticsearch.
 Http port : 9222
 Tcp port : 9333
 
+### Special Thanks
+- http://stackoverflow.com/a/28337913/3045437
