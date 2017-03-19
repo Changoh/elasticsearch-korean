@@ -1,8 +1,8 @@
 ################################### Cluster ###################################
-cluster.name: elasticsearch_example
+cluster.name: elasticsearch-example
 
 #################################### Node #####################################
-node.name: elasticsearch_example1
+node.name: elasticsearch-example1
 
 ################################### Memory ####################################
 #bootstrap.memory_lock: true
