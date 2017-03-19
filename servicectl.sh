@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONTAINER_NAME="elasticsearch-5.2.2"
+CONTAINER_NAME="elasticsearch-example"
 
 function usage {
     "Usage: ${0##*/} {start|stop|restart}"

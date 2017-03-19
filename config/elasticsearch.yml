@@ -1,8 +1,8 @@
 ################################### Cluster ###################################
-cluster.name: changoh_cluster
+cluster.name: elasticsearch_example
 
 #################################### Node #####################################
-node.name: changoh_home
+node.name: elasticsearch_example1
 
 ################################### Memory ####################################
 #bootstrap.memory_lock: true
