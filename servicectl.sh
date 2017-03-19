@@ -16,7 +16,7 @@ function start {
         -v $ES_HOME/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro \
         -v $ES_HOME/data:/usr/share/elasticsearch/data \
         -v $ES_HOME/log:/var/log/elasticsearch \
-	docker.elastic.co/elasticsearch/elasticsearch:5.2.2
+	elasticsearch:korean-test
 }
 
 function stop {

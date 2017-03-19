@@ -1,5 +1,5 @@
 # elasticsearch
-Elasticsearch(5.2.2) Configuration Example with Docker.
+Korean analyzer test in Elasticsearch(5.2.2)
 
 ### Prerequisites
 You need install Docker service and define $ES_HOME.
