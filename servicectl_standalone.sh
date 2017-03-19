@@ -10,13 +10,7 @@ function start {
     docker run --name $CONTAINER_NAME \
         -it \
         -e "TZ=Asia/Seoul" \
-	-e ES_JAVA_OPTS="-Xms1g -Xmx1g" \
-        -p 9333:9333 \
-        -p 9222:9222 \
-        -v /home/changoh/service/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro \
-        -v /home/changoh/service/elasticsearch/data:/usr/share/elasticsearch/data \
-        -v /home/changoh/service/elasticsearch/log:/var/log/elasticsearch \
-	docker.elastic.co/elasticsearch/elasticsearch:5.2.2
+        elasticsearch:5.2.2
 }
 
 function stop {
