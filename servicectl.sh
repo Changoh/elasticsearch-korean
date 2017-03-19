@@ -1,4 +1,4 @@
-#!/bin/sh
+#/bin/sh
 #
 # Docker 통해 ElasticSearch 관리하기 위한 스크립트.
 
