@@ -5,7 +5,7 @@ cluster.name: changoh_cluster
 node.name: changoh_home
 
 ################################### Memory ####################################
-bootstrap.memory_lock: true
+#bootstrap.memory_lock: true
 
 ############################## Network And HTTP ###############################
 transport.tcp.port: 9333
