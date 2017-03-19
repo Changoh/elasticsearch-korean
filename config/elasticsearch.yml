@@ -1,0 +1,71 @@
+################################### Cluster ###################################
+cluster.name: uocsearch
+
+#################################### Node #####################################
+node.name: changoh_home
+
+#################################### Index ####################################
+index.number_of_shards: 6
+index.number_of_replicas: 1
+
+################################### Memory ####################################
+bootstrap.mlockall: true
+
+############################## Network And HTTP ###############################
+transport.tcp.port: 9333
+http.port: 9222
+
+################################## Discovery ##################################
+network.publish_host: localhost
+#discovery.zen.minimum_master_nodes: 3
+#discovery.zen.ping.multicast.enabled: false
+#discovery.zen.ping.unicast.hosts: []
+
+################################## Slow Log ##################################
+index.search.slowlog.threshold.query.warn: 10s
+index.search.slowlog.threshold.query.info: 5s
+index.search.slowlog.threshold.query.debug: 2s
+index.search.slowlog.threshold.query.trace: 500ms
+
+index.search.slowlog.threshold.fetch.warn: 1s
+index.search.slowlog.threshold.fetch.info: 800ms
+index.search.slowlog.threshold.fetch.debug: 500ms
+index.search.slowlog.threshold.fetch.trace: 200ms
+
+index.indexing.slowlog.threshold.index.warn: 10s
+index.indexing.slowlog.threshold.index.info: 5s
+index.indexing.slowlog.threshold.index.debug: 2s
+index.indexing.slowlog.threshold.index.trace: 500ms
+
+
+################################## Threadpool ##################################
+# Search pool
+threadpool.search.type: fixed
+threadpool.search.size: 20
+threadpool.search.queue_size: 1000
+
+# Bulk pool
+threadpool.bulk.type: fixed
+threadpool.bulk.size: 60
+threadpool.bulk.queue_size: 300
+
+# Index pool
+threadpool.index.type: fixed
+threadpool.index.size: 20
+threadpool.index.queue_size: 200
+
+################################## GC Logging ################################
+
+monitor.jvm.gc.young.warn: 1000ms
+monitor.jvm.gc.young.info: 700ms
+monitor.jvm.gc.young.debug: 400ms
+
+monitor.jvm.gc.old.warn: 10s
+monitor.jvm.gc.old.info: 5s
+monitor.jvm.gc.old.debug: 2s
+
+
+script.disable_dynamic: false
+
+http.cors.allow-origin: "/.*/"
+http.cors.enabled: true
